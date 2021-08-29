@@ -20,7 +20,7 @@ public class topKFrequent_347 {
             if (heap.size() < k) {
                 heap.add(num);
             }
-            if (numMap.get(num) > heap.peek()) {
+            if (numMap.get(num) > numMap.get(heap.peek())) {
                 heap.remove();
                 heap.add(num);
             }
